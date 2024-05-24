@@ -1,0 +1,23 @@
+<div class="container">
+  <div *ngIf="!ready" class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div *ngIf="ready" style="padding: 16px; width: calc(100% - 32px);">
+    <form [formGroup]="formCreate" (ngSubmit)="onSubmit()" class="formulario">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Direccion</mat-label>
+        <input matInput formControlName="direccion" required>
+      </mat-form-field>
+      <div class="cancelar">
+        <button mat-raised-button color="primary" type="submit">Crear</button>
+        <button mat-raised-button color="warn" type="button" (click)="cancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

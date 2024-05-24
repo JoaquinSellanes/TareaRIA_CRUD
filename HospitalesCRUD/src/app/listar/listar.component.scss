@@ -1,0 +1,62 @@
+// estilos al propio componente
+:host {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-weight: 400;
+  color: #202020;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+  height: 80vh;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnEditar,
+.btnEliminar {
+  color: white;
+  border: none;
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnEditar {
+  background-color: #1b22d8;
+}
+
+.btnEliminar {
+  background-color: #d81b1b;
+}
+
+.btnEliminar:hover {
+  background-color: #a90f0f;
+}
+
+.btnEditar:hover {
+  background-color: #0c11a9;
+}

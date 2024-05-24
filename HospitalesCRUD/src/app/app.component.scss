@@ -1,0 +1,67 @@
+
+
+.sidenav-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav-content{
+  display: flex;
+  height: 100%;
+  align-self: start;
+  justify-self: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  z-index: 2;
+}
+
+.buttonSide{
+  border-radius: 10px;
+  display: block;
+  color: white !important;
+  background-color: #171dbd !important;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  padding: 20px;
+}
+
+.bodyWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 80%;
+}
+
+.routerContent {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
